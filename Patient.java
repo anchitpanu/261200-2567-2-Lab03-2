@@ -44,14 +44,22 @@ public class Patient {
         }
     }
 
+    public String getbloodGroup() {
+        return 0;
+    }
+
+    public String getphoneNumber() {
+        return 0;
+    }
+
     public void displayDetails(int currentYear) {
         System.out.println("Patient Name: " + name);
         System.out.println("Patient Age: " + getAge(currentYear));
-        System.out.println("Patient bloodGroup: " + bloodGroup);
+        System.out.println("Patient bloodGroup: " + getbloodGroup());
         System.out.println("Patient Height (cm): " + height);
         System.out.println("Patient Weight (kg): " + weight);
         System.out.println("Patient BMI: " + getBMI());
-        System.out.println("Patient Phone Number: " + phoneNumber + "\n");
+        System.out.println("Patient Phone Number: " + getphoneNumber() + "\n");
     }
 
 }
